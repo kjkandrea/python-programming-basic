@@ -41,4 +41,26 @@ class Counter:
 * 메소드의 구현에 사용되지만 메소드 호출 시 사용되지않음
 * 객체 자신을 참조하여 클래스 정의에 포함된 맴버에 접근시 사용
 
+## 클래스 설계
 
+UML 클래스 다이어그램을 통해 데이터필드, 생성자, 메소드 표현 방법 표준화
+
+```
+데이터 필드 이름: 데이터 필드 타입
+클래스 이름(매개변수 이름: 매개변수 타입)
+메소드 이름(매개변수 이름: 매개변수 타입): 반환값 타입
+```
+
+[![](https://mermaid.ink/img/pako:eNpNjzsLwzAMhP-K0ZRAhtJuhk7t2qmroYhYTgx-FFsulJD_XucBqRadPt1wN0EfNYGE3mHOd4tDQq-CCustbjGQmFQQdZIUNvCmxz-9eJqE2pYsruJ8Wl-dGMkOI1dy2Ui7uQfi1ye6phXGReQD5pLMQWfowFPyaHUNtyZQwCN5UiCr1GSwOFawWbFwfH5DD5JToQ7KWyPTXgekQZcrJW05psdeeFnzD0rpU5Y?type=png)](https://mermaid.live/edit#pako:eNpNjzsLwzAMhP-K0ZRAhtJuhk7t2qmroYhYTgx-FFsulJD_XucBqRadPt1wN0EfNYGE3mHOd4tDQq-CCustbjGQmFQQdZIUNvCmxz-9eJqE2pYsruJ8Wl-dGMkOI1dy2Ui7uQfi1ye6phXGReQD5pLMQWfowFPyaHUNtyZQwCN5UiCr1GSwOFawWbFwfH5DD5JToQ7KWyPTXgekQZcrJW05psdeeFnzD0rpU5Y)
+
+```puml
+classDiagram
+
+class Cone {
+    r: int
+    h: int
+    Cone(radius = 20: int, height = 30: int)
+    get_vol() float
+    get_surf() float
+}
+```
